@@ -1,0 +1,2 @@
+# WeatherPredictor
+Hitamælir
