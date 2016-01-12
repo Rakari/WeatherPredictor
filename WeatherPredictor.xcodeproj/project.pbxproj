@@ -7,13 +7,27 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F38765AA1C0F42EF0018D6A4 /* WeatherViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F38765A91C0F42EF0018D6A4 /* WeatherViewController.swift */; };
 		F3ACFC241C09BC06004ACBAC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3ACFC231C09BC06004ACBAC /* AppDelegate.swift */; };
-		F3ACFC261C09BC06004ACBAC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3ACFC251C09BC06004ACBAC /* ViewController.swift */; };
 		F3ACFC291C09BC06004ACBAC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F3ACFC271C09BC06004ACBAC /* Main.storyboard */; };
 		F3ACFC2B1C09BC06004ACBAC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F3ACFC2A1C09BC06004ACBAC /* Assets.xcassets */; };
 		F3ACFC2E1C09BC06004ACBAC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F3ACFC2C1C09BC06004ACBAC /* LaunchScreen.storyboard */; };
 		F3ACFC391C09BC06004ACBAC /* WeatherPredictorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3ACFC381C09BC06004ACBAC /* WeatherPredictorTests.swift */; };
 		F3ACFC441C09BC06004ACBAC /* WeatherPredictorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3ACFC431C09BC06004ACBAC /* WeatherPredictorUITests.swift */; };
+		F3ACFC531C09BC1F004ACBAC /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3ACFC511C09BC1F004ACBAC /* Bolts.framework */; };
+		F3ACFC541C09BC1F004ACBAC /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3ACFC521C09BC1F004ACBAC /* Parse.framework */; };
+		F3ACFC561C09BC2F004ACBAC /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3ACFC551C09BC2F004ACBAC /* AudioToolbox.framework */; };
+		F3ACFC581C09BC3B004ACBAC /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3ACFC571C09BC3B004ACBAC /* CFNetwork.framework */; };
+		F3ACFC5A1C09BC45004ACBAC /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3ACFC591C09BC45004ACBAC /* CoreGraphics.framework */; };
+		F3ACFC5C1C09BC4C004ACBAC /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3ACFC5B1C09BC4C004ACBAC /* CoreLocation.framework */; };
+		F3ACFC5E1C09BC53004ACBAC /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3ACFC5D1C09BC53004ACBAC /* QuartzCore.framework */; };
+		F3ACFC601C09BC5D004ACBAC /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3ACFC5F1C09BC5D004ACBAC /* Security.framework */; };
+		F3ACFC621C09BC65004ACBAC /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3ACFC611C09BC65004ACBAC /* StoreKit.framework */; };
+		F3ACFC641C09BC6D004ACBAC /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3ACFC631C09BC6D004ACBAC /* SystemConfiguration.framework */; };
+		F3ACFC661C09BC79004ACBAC /* libz.1.2.5.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = F3ACFC651C09BC79004ACBAC /* libz.1.2.5.tbd */; };
+		F3ACFC681C09BC81004ACBAC /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = F3ACFC671C09BC81004ACBAC /* libsqlite3.tbd */; };
+		F3ACFC6B1C09FEFF004ACBAC /* TodayCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3ACFC6A1C09FEFF004ACBAC /* TodayCell.swift */; };
+		F3ACFC6D1C09FF0A004ACBAC /* OtherDayCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3ACFC6C1C09FF0A004ACBAC /* OtherDayCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,9 +48,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		F38765A91C0F42EF0018D6A4 /* WeatherViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WeatherViewController.swift; path = ../WeatherViewController.swift; sourceTree = "<group>"; };
 		F3ACFC201C09BC06004ACBAC /* WeatherPredictor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WeatherPredictor.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F3ACFC231C09BC06004ACBAC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		F3ACFC251C09BC06004ACBAC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		F3ACFC281C09BC06004ACBAC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F3ACFC2A1C09BC06004ACBAC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F3ACFC2D1C09BC06004ACBAC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +61,20 @@
 		F3ACFC3F1C09BC06004ACBAC /* WeatherPredictorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WeatherPredictorUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F3ACFC431C09BC06004ACBAC /* WeatherPredictorUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherPredictorUITests.swift; sourceTree = "<group>"; };
 		F3ACFC451C09BC06004ACBAC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F3ACFC511C09BC1F004ACBAC /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Bolts.framework; path = WeatherPredictor/Bolts.framework; sourceTree = "<group>"; };
+		F3ACFC521C09BC1F004ACBAC /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Parse.framework; path = WeatherPredictor/Parse.framework; sourceTree = "<group>"; };
+		F3ACFC551C09BC2F004ACBAC /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		F3ACFC571C09BC3B004ACBAC /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		F3ACFC591C09BC45004ACBAC /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		F3ACFC5B1C09BC4C004ACBAC /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		F3ACFC5D1C09BC53004ACBAC /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		F3ACFC5F1C09BC5D004ACBAC /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		F3ACFC611C09BC65004ACBAC /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		F3ACFC631C09BC6D004ACBAC /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		F3ACFC651C09BC79004ACBAC /* libz.1.2.5.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.1.2.5.tbd; path = usr/lib/libz.1.2.5.tbd; sourceTree = SDKROOT; };
+		F3ACFC671C09BC81004ACBAC /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		F3ACFC6A1C09FEFF004ACBAC /* TodayCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TodayCell.swift; sourceTree = "<group>"; };
+		F3ACFC6C1C09FF0A004ACBAC /* OtherDayCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OtherDayCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +82,18 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F3ACFC681C09BC81004ACBAC /* libsqlite3.tbd in Frameworks */,
+				F3ACFC661C09BC79004ACBAC /* libz.1.2.5.tbd in Frameworks */,
+				F3ACFC641C09BC6D004ACBAC /* SystemConfiguration.framework in Frameworks */,
+				F3ACFC621C09BC65004ACBAC /* StoreKit.framework in Frameworks */,
+				F3ACFC601C09BC5D004ACBAC /* Security.framework in Frameworks */,
+				F3ACFC5E1C09BC53004ACBAC /* QuartzCore.framework in Frameworks */,
+				F3ACFC5C1C09BC4C004ACBAC /* CoreLocation.framework in Frameworks */,
+				F3ACFC5A1C09BC45004ACBAC /* CoreGraphics.framework in Frameworks */,
+				F3ACFC581C09BC3B004ACBAC /* CFNetwork.framework in Frameworks */,
+				F3ACFC561C09BC2F004ACBAC /* AudioToolbox.framework in Frameworks */,
+				F3ACFC541C09BC1F004ACBAC /* Parse.framework in Frameworks */,
+				F3ACFC531C09BC1F004ACBAC /* Bolts.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -77,6 +117,7 @@
 		F3ACFC171C09BC06004ACBAC = {
 			isa = PBXGroup;
 			children = (
+				F3ACFC691C09BC99004ACBAC /* Frameworks */,
 				F3ACFC221C09BC06004ACBAC /* WeatherPredictor */,
 				F3ACFC371C09BC06004ACBAC /* WeatherPredictorTests */,
 				F3ACFC421C09BC06004ACBAC /* WeatherPredictorUITests */,
@@ -98,8 +139,10 @@
 			isa = PBXGroup;
 			children = (
 				F3ACFC231C09BC06004ACBAC /* AppDelegate.swift */,
-				F3ACFC251C09BC06004ACBAC /* ViewController.swift */,
+				F38765A91C0F42EF0018D6A4 /* WeatherViewController.swift */,
 				F3ACFC271C09BC06004ACBAC /* Main.storyboard */,
+				F3ACFC6A1C09FEFF004ACBAC /* TodayCell.swift */,
+				F3ACFC6C1C09FF0A004ACBAC /* OtherDayCell.swift */,
 				F3ACFC2A1C09BC06004ACBAC /* Assets.xcassets */,
 				F3ACFC2C1C09BC06004ACBAC /* LaunchScreen.storyboard */,
 				F3ACFC2F1C09BC06004ACBAC /* Info.plist */,
@@ -123,6 +166,25 @@
 				F3ACFC451C09BC06004ACBAC /* Info.plist */,
 			);
 			path = WeatherPredictorUITests;
+			sourceTree = "<group>";
+		};
+		F3ACFC691C09BC99004ACBAC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F3ACFC511C09BC1F004ACBAC /* Bolts.framework */,
+				F3ACFC521C09BC1F004ACBAC /* Parse.framework */,
+				F3ACFC671C09BC81004ACBAC /* libsqlite3.tbd */,
+				F3ACFC651C09BC79004ACBAC /* libz.1.2.5.tbd */,
+				F3ACFC631C09BC6D004ACBAC /* SystemConfiguration.framework */,
+				F3ACFC611C09BC65004ACBAC /* StoreKit.framework */,
+				F3ACFC5F1C09BC5D004ACBAC /* Security.framework */,
+				F3ACFC5D1C09BC53004ACBAC /* QuartzCore.framework */,
+				F3ACFC5B1C09BC4C004ACBAC /* CoreLocation.framework */,
+				F3ACFC591C09BC45004ACBAC /* CoreGraphics.framework */,
+				F3ACFC571C09BC3B004ACBAC /* CFNetwork.framework */,
+				F3ACFC551C09BC2F004ACBAC /* AudioToolbox.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,8 +321,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F3ACFC261C09BC06004ACBAC /* ViewController.swift in Sources */,
+				F3ACFC6D1C09FF0A004ACBAC /* OtherDayCell.swift in Sources */,
+				F38765AA1C0F42EF0018D6A4 /* WeatherViewController.swift in Sources */,
 				F3ACFC241C09BC06004ACBAC /* AppDelegate.swift in Sources */,
+				F3ACFC6B1C09FEFF004ACBAC /* TodayCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -400,6 +464,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/WeatherPredictor",
+				);
 				INFOPLIST_FILE = WeatherPredictor/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = bollagardarproductions.WeatherPredictor;
@@ -411,6 +479,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/WeatherPredictor",
+				);
 				INFOPLIST_FILE = WeatherPredictor/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = bollagardarproductions.WeatherPredictor;
@@ -485,6 +557,7 @@
 				F3ACFC4A1C09BC06004ACBAC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F3ACFC4B1C09BC06004ACBAC /* Build configuration list for PBXNativeTarget "WeatherPredictorTests" */ = {
 			isa = XCConfigurationList;
@@ -493,6 +566,7 @@
 				F3ACFC4D1C09BC06004ACBAC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F3ACFC4E1C09BC06004ACBAC /* Build configuration list for PBXNativeTarget "WeatherPredictorUITests" */ = {
 			isa = XCConfigurationList;
@@ -501,6 +575,7 @@
 				F3ACFC501C09BC06004ACBAC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

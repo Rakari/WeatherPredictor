@@ -6,6 +6,8 @@
 //  Copyright © 2015 Bollagardar Productions. All rights reserved.
 //
 
+import Parse
+import Bolts
 import UIKit
 
 @UIApplicationMain
@@ -16,6 +18,16 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
+        
+        Parse.enableLocalDatastore()
+        
+        // Initialize Parse.
+        Parse.setApplicationId("gYVvhzGv00VFcQT5S2UAOWUwsuGoUW3qM7JYDwfU",
+            clientKey: "o6s3lyTj0UrOgnXjQhqwXPNjAhT7vW6TREdQAOUn")
+        
+        // [Optional] Track statistics around application opens.
+        PFAnalytics.trackAppOpenedWithLaunchOptions(launchOptions)
+        
         return true
     }
 
