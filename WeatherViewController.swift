@@ -42,24 +42,6 @@ extension NSDate
         return isLess
     }
     
-    
-    /*func isEqualDate(dateToCompare : NSDate) -> Bool
-    {
-        //Declare Variables
-        var isEqualTo = false
-        
-        //Compare Values
-        if self.compare(dateToCompare) == NSComparisonResult.OrderedSame
-        {
-            isEqualTo = true
-        }
-        
-        //Return Result
-        return isEqualTo
-    }*/
-    
-    
-    
     func addDays(daysToAdd : Int) -> NSDate
     {
         let secondsInDays : NSTimeInterval = Double(daysToAdd) * 60 * 60 * 24
@@ -68,7 +50,6 @@ extension NSDate
         //Return Result
         return dateWithDaysAdded
     }
-    //
     
     func addHours(hoursToAdd : Int) -> NSDate
     {
@@ -82,6 +63,33 @@ extension NSDate
 
 class WeatherViewController: UITableViewController {
     var predictions : [PFObject] = []
+    
+    func averageTemp(objects:[PFObject]) -> PFObject {
+        let avTemp : PFObject = PFObject()
+        for object in objects {
+            avTemp["current"] = (avTemp["current"] as! Int) + (object["current"] as! Int)
+            
+            avTemp["prediction1"] = (avTemp["prediction1"] as! Int) + (object["prediction1"] as! Int)
+            avTemp["prediction2"] = (avTemp["prediction2"] as! Int) + (object["prediction2"] as! Int)
+            avTemp["prediction3"] = (avTemp["prediction3"] as! Int) + (object["prediction3"] as! Int)
+            avTemp["prediction4"] = (avTemp["prediction4"] as! Int) + (object["prediction4"] as! Int)
+            avTemp["prediction5"] = (avTemp["prediction5"] as! Int) + (object["prediction5"] as! Int)
+            avTemp["prediction6"] = (avTemp["prediction6"] as! Int) + (object["prediction6"] as! Int)
+            avTemp["prediction7"] = (avTemp["prediction7"] as! Int) + (object["prediction7"] as! Int)
+        }
+        
+        avTemp["current"] = (avTemp["current"] as! Int) / objects.count
+        
+        avTemp["prediction1"] = (avTemp["prediction1"] as! Int) / objects.count
+        avTemp["prediction2"] = (avTemp["prediction2"] as! Int) / objects.count
+        avTemp["prediction3"] = (avTemp["prediction3"] as! Int) / objects.count
+        avTemp["prediction4"] = (avTemp["prediction4"] as! Int) / objects.count
+        avTemp["prediction5"] = (avTemp["prediction5"] as! Int) / objects.count
+        avTemp["prediction6"] = (avTemp["prediction6"] as! Int) / objects.count
+        avTemp["prediction7"] = (avTemp["prediction7"] as! Int) / objects.count
+        
+        return avTemp
+    }
     
     func fetchParseData() {
         let dateFormatter = NSDateFormatter()
@@ -106,9 +114,11 @@ class WeatherViewController: UITableViewController {
             if error == nil {
                 var totalTemp = 0
                 for object in objects! {
-                    totalTemp += object["current"] as! Int
-                    print(object)
+                    //totalTemp += object["current"] as! Int
+                    //print(object)
+                    
                 }
+                print(self.averageTemp(objects!))
                 //let avTemp = totalTemp/objects!.count
                 
             } else {
