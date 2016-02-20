@@ -7,88 +7,61 @@
 //
 
 import UIKit
-import Parse
-
-extension NSDate
-{
-    func isGreaterThanDate(dateToCompare : NSDate) -> Bool
-    {
-        //Declare Variables
-        var isGreater = false
-        
-        //Compare Values
-        if self.compare(dateToCompare) == NSComparisonResult.OrderedDescending
-        {
-            isGreater = true
-        }
-        
-        //Return Result
-        return isGreater
-    }
-    
-    
-    func isLessThanDate(dateToCompare : NSDate) -> Bool
-    {
-        //Declare Variables
-        var isLess = false
-        
-        //Compare Values
-        if self.compare(dateToCompare) == NSComparisonResult.OrderedAscending
-        {
-            isLess = true
-        }
-        
-        //Return Result
-        return isLess
-    }
-    
-    func addDays(daysToAdd : Int) -> NSDate
-    {
-        let secondsInDays : NSTimeInterval = Double(daysToAdd) * 60 * 60 * 24
-        let dateWithDaysAdded : NSDate = self.dateByAddingTimeInterval(secondsInDays)
-        
-        //Return Result
-        return dateWithDaysAdded
-    }
-    
-    func addHours(hoursToAdd : Int) -> NSDate
-    {
-        let secondsInHours : NSTimeInterval = Double(hoursToAdd) * 60 * 60
-        let dateWithHoursAdded : NSDate = self.dateByAddingTimeInterval(secondsInHours)
-        
-        //Return Result
-        return dateWithHoursAdded
-    }
-}
 
 class WeatherViewController: UITableViewController {
-    var predictions : [PFObject] = []
+    var weatherData : WeatherData
     
-    func averageTemp(objects:[PFObject]) -> PFObject {
-        let avTemp : PFObject = PFObject()
-        for object in objects {
-            avTemp["current"] = (avTemp["current"] as! Int) + (object["current"] as! Int)
+    
+/*    func fetchParseData(focusDate : NSDate) {
+        //  Fetch records centered around the focus date. Historical records backward and predictions forward
+        //  Predictions are all found in the records of the focusdate.
+        
+        let numDaysBack = 6
+        
+        // Create the start and stop dates for the query
+        
+        let calendar = NSCalendar.currentCalendar()
+        var components = calendar.components([.Year, .Month, .Day, .Hour, .Minute], fromDate: calendar.dateByAddingUnit(.Day, value: -numDaysBack, toDate: focusDate, options: NSCalendarOptions(rawValue:0))!)
+        components.hour = 0
+        components.minute = 0
+        let queryStartDate = calendar.dateFromComponents(components)!
+        
+        components = calendar.components([.Year, .Month, .Day, .Hour, .Minute], fromDate: calendar.dateByAddingUnit(.Day, value: 1, toDate: focusDate, options: NSCalendarOptions(rawValue:0))!)
+        components.hour = 0
+        components.minute = 0
+        let queryStopDate = calendar.dateFromComponents(components)!
+        
+        // Build the query
+        
+        let query = PFQuery(className:"Data")
+        query.whereKey("date", greaterThan: queryStartDate)
+        query.whereKey("date", lessThan: queryStopDate)
+        
+        // Run the query and calculate the average for each day
+        // Each timestamp should hold current value and seven days forward prediction.
+        
+        query.findObjectsInBackgroundWithBlock { (objects, error) -> Void in
+            if error == nil {
+                print(objects)
+  /*              var currentDate
+                var totalTemp = 0
+                for object in objects! {
+                    //totalTemp += object["current"] as! Int
+                    //print(object)
+                    
+                }
+                print(self.averageTemp(objects!))*/
+                //let avTemp = totalTemp/objects!.count
+                
+            } else {
+                print(error)
+            }
+            self.tableView.reloadData()
             
-            avTemp["prediction1"] = (avTemp["prediction1"] as! Int) + (object["prediction1"] as! Int)
-            avTemp["prediction2"] = (avTemp["prediction2"] as! Int) + (object["prediction2"] as! Int)
-            avTemp["prediction3"] = (avTemp["prediction3"] as! Int) + (object["prediction3"] as! Int)
-            avTemp["prediction4"] = (avTemp["prediction4"] as! Int) + (object["prediction4"] as! Int)
-            avTemp["prediction5"] = (avTemp["prediction5"] as! Int) + (object["prediction5"] as! Int)
-            avTemp["prediction6"] = (avTemp["prediction6"] as! Int) + (object["prediction6"] as! Int)
-            avTemp["prediction7"] = (avTemp["prediction7"] as! Int) + (object["prediction7"] as! Int)
+            let indexPath = NSIndexPath(forRow: 12, inSection: 0)
+            self.tableView.scrollToRowAtIndexPath(indexPath, atScrollPosition: UITableViewScrollPosition.Bottom, animated: false)
         }
         
-        avTemp["current"] = (avTemp["current"] as! Int) / objects.count
-        
-        avTemp["prediction1"] = (avTemp["prediction1"] as! Int) / objects.count
-        avTemp["prediction2"] = (avTemp["prediction2"] as! Int) / objects.count
-        avTemp["prediction3"] = (avTemp["prediction3"] as! Int) / objects.count
-        avTemp["prediction4"] = (avTemp["prediction4"] as! Int) / objects.count
-        avTemp["prediction5"] = (avTemp["prediction5"] as! Int) / objects.count
-        avTemp["prediction6"] = (avTemp["prediction6"] as! Int) / objects.count
-        avTemp["prediction7"] = (avTemp["prediction7"] as! Int) / objects.count
-        
-        return avTemp
     }
     
     func fetchParseData() {
@@ -131,11 +104,18 @@ class WeatherViewController: UITableViewController {
         }
         
     }
-    
+    */
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        let dateFormatter = NSDateFormatter()
+        dateFormatter.dateFormat = "dd.MM.yyyy HH:mm"
+        let today = dateFormatter.dateFromString("02.12.2015 00:00")
 
-        fetchParseData()
+        weatherData = WeatherData()
+        
+        weatherData.fetchParseData(today!)
+        
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 

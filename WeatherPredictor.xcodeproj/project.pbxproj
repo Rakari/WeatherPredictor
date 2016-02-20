@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		780F6A6E1C6BC46B00B689BF /* WeatherData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 780F6A6D1C6BC46B00B689BF /* WeatherData.swift */; };
 		F38765AA1C0F42EF0018D6A4 /* WeatherViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F38765A91C0F42EF0018D6A4 /* WeatherViewController.swift */; };
 		F3ACFC241C09BC06004ACBAC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3ACFC231C09BC06004ACBAC /* AppDelegate.swift */; };
 		F3ACFC291C09BC06004ACBAC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F3ACFC271C09BC06004ACBAC /* Main.storyboard */; };
@@ -48,6 +49,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		780F6A6D1C6BC46B00B689BF /* WeatherData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherData.swift; sourceTree = "<group>"; };
 		F38765A91C0F42EF0018D6A4 /* WeatherViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WeatherViewController.swift; path = ../WeatherViewController.swift; sourceTree = "<group>"; };
 		F3ACFC201C09BC06004ACBAC /* WeatherPredictor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WeatherPredictor.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F3ACFC231C09BC06004ACBAC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -140,6 +142,7 @@
 			children = (
 				F3ACFC231C09BC06004ACBAC /* AppDelegate.swift */,
 				F38765A91C0F42EF0018D6A4 /* WeatherViewController.swift */,
+				780F6A6D1C6BC46B00B689BF /* WeatherData.swift */,
 				F3ACFC271C09BC06004ACBAC /* Main.storyboard */,
 				F3ACFC6A1C09FEFF004ACBAC /* TodayCell.swift */,
 				F3ACFC6C1C09FF0A004ACBAC /* OtherDayCell.swift */,
@@ -322,6 +325,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F3ACFC6D1C09FF0A004ACBAC /* OtherDayCell.swift in Sources */,
+				780F6A6E1C6BC46B00B689BF /* WeatherData.swift in Sources */,
 				F38765AA1C0F42EF0018D6A4 /* WeatherViewController.swift in Sources */,
 				F3ACFC241C09BC06004ACBAC /* AppDelegate.swift in Sources */,
 				F3ACFC6B1C09FEFF004ACBAC /* TodayCell.swift in Sources */,
